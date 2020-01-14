@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+<title>Listing 2-1</title>
+<script language="JavaScript" src="..\js\angular.min.js"></script>
+<!--<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script> /ChartExample/js/-->
+
+<script language="JavaScript" src="..\js\myApp.js"></script>
+<!--<script language="JavaScript" src="..\controller\employeectrl.js"></script>    -->
+</head>
+
+<body ng-app="myApp">
+<p>Hello {{'Wor' + 'ld'}}</p>
+
+    <label>City: </label><input ng-model="city" type="text" />
+    <p>You entered: {{city}}</p>
+    
+<p ng-show="true">Paragraph 1, can you see me?</p>
+
+    <button ng-click="count=count+1" >click me</button>    
+    Counter Value:{{count}}
+
+    <div ng-controller="myCtrl">
+    
+        <h2>Number of Employees: {{ ourEmployees.length}}</h2>
+    </div>
+
+    
+</body>
+</html>
